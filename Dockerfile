@@ -18,4 +18,4 @@ EXPOSE 8000
 ENV OPENAI_API_KEY ""
 
 # Run uvicorn when the container launches
-CMD ["uvicorn", "openai:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "openaiapi:app", "--host", "0.0.0.0", "--port", "8000"]
