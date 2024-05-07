@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # Set OpenAI API key
-ENV OPENAI_API_KEY sk-proj-xwJxnC57NqWr4BAOeeXBT3BlbkFJe7cGFZ7OamR60b0DPoVV
+ENV OPENAI_API_KEY ""
 
 # Run uvicorn when the container launches
 CMD ["uvicorn", "openai:app", "--host", "0.0.0.0", "--port", "8000"]
